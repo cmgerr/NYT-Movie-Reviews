@@ -20,7 +20,7 @@ The dataset of 26,000+ reviews was sourced by first making calls to NYT Movie Re
 
 ![alt text](https://github.com/cmgerr/NYT-Movie-Reviews/raw/master/Images/reviews_per_year.png)
 
-As is clear from this chart, there are no reviews for 2005. This needs further investigation.
+As is clear from this chart, there are very few reviews for 2005. This needs further investigation.
 
 To understand the dataset, I also looked at the percent of all reviews each year that designated a film as a Critic's Pick:
 
