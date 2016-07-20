@@ -40,6 +40,12 @@ The SVM model performed the best by far, with an ROC AUC score of 0.80 (compared
 
 ![alt text](https://github.com/cmgerr/NYT-Movie-Reviews/raw/master/Images/cpick_svm_roccurve.png)
 
+To help select the model probability threshold to use, the below plot shows the True Positive Rate, False Positive Rate, and Precision plotted against the model's predicted probability of a film being a critic's pick:
+
+![alt text](https://github.com/cmgerr/NYT-Movie-Reviews/raw/master/Images/SVM_Model_P_Threshold.png)
+
+## Next Steps
+
 For further enhancement of this model, I plan to implement a lemmatizer instead of a stemmer to more accurately truncate words, and also to incorporate the month of the review as a model feature. As the graph below shows, there is a seasonal trend in Critic's Pick designations.
 
 ![alt text](https://github.com/cmgerr/NYT-Movie-Reviews/raw/master/Images/criticspick%25_per_month.png)
@@ -55,6 +61,8 @@ For the preliminary model, I gridsearched optimal hyperparameters for a pipeline
 ![alt text](https://github.com/cmgerr/NYT-Movie-Reviews/raw/master/Images/author_svm_confusion_matrix.png)
 
 Despite my initial intuition that the second modeling problem would require a more nuanced style analysis of the reviews to be successful, the SVM model only uses counts of individual words in each review and is still highly accurate. However, I am confident that by incorporating more nuanced features extracted from the text, the accuracy can be further increased.
+
+## Next Steps
 
 As next steps for this second problem, I plan to use topic modeling techniques in order to incorporate topics as features, and to incorporate ratios of part-of-speech tags in reviews. I also plan to build and tune an Artificial Neural Network to compare with the SVM model.
 
