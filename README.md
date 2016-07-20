@@ -38,7 +38,7 @@ I built pipelines using word stemming and count vectorization along with three d
 
 The SVM model performed the best by far, with an ROC AUC score of 0.80 (compared with 0.70 for MultinomialNB and 0.68 for kNN). Shown below is the ROC curve for the SVM model:
 
-![alt text](https://github.com/cmgerr/NYT-Movie-Reviews/raw/master/Images/SVM_Model_ROC_Curve.png)
+![alt text](https://github.com/cmgerr/NYT-Movie-Reviews/raw/master/Images/cpick_svm_roccurve.png)
 
 To help select the model probability threshold to use, the below plot shows the True Positive Rate, False Positive Rate, and Precision plotted against the model's predicted probability of a film being a critic's pick:
 
